@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.primary-text{
+    color: #20B499;
+}
+
+.secondary-text{
+    color: rgb(201, 200, 200);
+}
+
+.linear-grad{
+    background:linear-gradient(360deg , rgb(59, 59, 59) , black);
+}
+
+.linear-grad2{
+    background:linear-gradient(320deg , #20B499 , black);
+}
+
+body {
+    background-color: #15161A !important;
+    color: white !important;
+    overflow-x: hidden;
+}
+
+.page-layout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.navigation-section {
+    width: 5%;
+    background:linear-gradient(360deg , rgb(59, 59, 59) , black);
+    transition-duration: 0.5s;
+    z-index: 10;
+    border-right: 2px solid #20B499;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navigation-section:hover{
+    width: 15%;
+    z-index: 10;
+    opacity: 10;
+}
+
+.navbar {
+    /* border: 0.5px solid grey; */
+    /* box-shadow: 4px 4px 6px rgb(29, 29, 29); */
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+}
+
+.nav-item {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-icon {
+    padding: 15px;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.drawer-text {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+
+.drawer-text:hover{
+    color: #20B499;
+}
+
+.main-content-section {
+    overflow-y: auto;
+    width: 95%;
+    min-width: 100%;
+    padding-right: 20px;
+    margin-left: 75px;
+}
+
+.main-content-section::-webkit-scrollbar{
+    width: 0;
+}
+
+.nav-icon:hover {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 2px 2px 4px #20B499;
+    transition-duration: 0.6s;
+}
+
+.banner-container {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+#home-main-container{
+    display: flex;
+}
+
+.banner-container .contact-btn{
+    background-color: transparent;
+    border: 1px solid #20B499;
+    color: #20B499;
+    padding: 8px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.banner-container .contact-btn:hover{
+    background-color: #20B499;
+    color: white;
+}
+
+.projects {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.project-cards-container {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 60px;
+    margin-bottom: 50px;
+}
+
+.project-cards-container::-webkit-scrollbar {
+    height: 5px;
+    /* Width of the entire scrollbar */
+}
+
+.project-cards-container::-webkit-scrollbar-thumb {
+    background: #3b3b3b; /* Color of the scrollbar handle */
+  }
+
+.project-card {
+    min-width: 350px;
+    max-width: 350px;
+    height: 350px;
+    border: 1px solid #20B499;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+.project-card:hover{
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 2px #20B499;
+    background-color: rgb(43, 43, 43);
+}
+
+.project-card h5{
+    color: #20B499;
+}
+
+.project-desc{
+    color: rgb(201, 200, 200);
+}
+
+.project-details{
+    margin: 3px;
+    padding: 2px;
+}
+
+.project-thumbnail{
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.about-section{
+    margin-left: 80px;
+    margin-top: 30px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.about-section::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.about-para{
+    margin-top: 20px;
+    text-align: left;
+    color: rgb(201, 200, 200);
+}
+
+.about-card-img{
+    width: 280px;
+    height: 280px;
+}
+
+.who-we-are-section{
+    margin-top: 50px;
+}
+
+.about-card{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    background: linear-gradient(360deg, transparent, black);
+    padding: 10px;
+    text-align: left;
+    border-top: 3px solid #20B499;
+}
+
+.about-card-content{
+    padding: 10px;
+}
+
+
